@@ -1,0 +1,46 @@
+.inner {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.samevalue{
+  color: white;
+  font-weight: bold;
+}
+.side-bar {
+  background-color: #2f3e51;
+  width:300px;
+  height:100vh;
+  
+  .top-item {
+    background-color: #253141;
+    height: 100px;
+    width: 300px;
+
+    .bar_name{
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 100px;
+      display: flex;
+      justify-content: space-between;
+      .right-column{
+        width: 60px;
+        .right-column--edit {
+          margin-right: 5px;
+          color: white;
+        }
+        .right-column--cog {
+          color: white;
+        }
+      }
+    }
+  }
+  .bar_logo{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .bar-message{
+    font-size: 11px;
+  }
+
+  
+}

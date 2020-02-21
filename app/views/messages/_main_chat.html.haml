@@ -1,0 +1,59 @@
+.main_chat
+  .main_chat-top
+    .left-test
+      %p.left-test-top
+        test
+      %p.left-test-under
+        Member: masa
+    .right-edit
+      = link_to 'Edit' , '#' , class: "deco-none"
+
+  .main_chat-middle
+    .Message
+      .message-name
+        .left
+          Mako
+        .right
+          2020年2月20日(Fri)10:10:00
+
+      .message-title
+        おはよう！
+      .message-contexts
+        .message-name
+          .left
+            Mako
+          .right
+            2020年2月20日(Fri)10:10:00
+        .message-content
+          今日は夜から雨なんだな
+    .Message
+      .message-name
+        .left
+          Mako
+        .right
+          2020年2月20日(Fri)10:10:00
+
+      .message-title
+        おはよう！
+      .message-contexts
+        .message-name
+          .left
+            Mako
+          .right
+            2020年2月20日(Fri)10:10:00
+        .message-content
+          今日は夜から雨なんだな
+  .main_chat-bottom
+    .inner
+      .type-message
+        %input.word{placeholder: "type a message"} 
+        .word-right
+          %label{class: ""}
+            = icon('fas', 'image')
+            %input.display-none{type: "file"}
+      .send-button
+        Send
+ 
+  
+
+  
