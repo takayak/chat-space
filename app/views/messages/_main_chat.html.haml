@@ -2,41 +2,16 @@
   .main_chat-top
     .left-test
       %p.left-test-top
-        test
+        = @group.name
       %p.left-test-under
-        Member: masa
+        - @group.users.each do |user|
+          = user.name
+
     .right-edit
-      = link_to 'Edit' , '#' , class: "deco-none"
+      = link_to 'Edit' , edit_group_path(@group) , class: "deco-none"
 
   .main_chat-middle
-    
-    .Message
-      .message-name
-        .left
-          Mako
-        .right
-          2020年2月20日(Fri)10:10:00
-
-      .message-title
-        おはよう！
-      .message-contexts
-        .message-name
-          .left
-            Mako
-          .right
-            2020年2月20日(Fri)10:10:00
-        .message-content
-          今日は夜から雨なんだな
-  -# .main_chat-bottom
-  -#   .form
-  -#     .type-message
-  -#       %input.word{placeholder: "type a message"} 
-  -#       .word-right
-  -#         %label
-  -#           = icon('fas', 'image')
-  -#           %input.display-none{type: "file"}
-  -#     .send-button
-  -#       Send
+    = render @messages
 
   .main_chat-bottom
     = form_for [@group, @message] do |f|
@@ -47,6 +22,4 @@
             = icon('fas', 'image', class: '')
             = f.file_field :image, class: 'display-none'
         .word-right
-          = f.submit 'Send', class: 'send-button'
-
-  
+        = f.submit 'Send', class: 'send-button'
