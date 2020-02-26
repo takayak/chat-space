@@ -36,7 +36,13 @@
   }
   .bar_logo{
     font-size: 15px;
-    margin-bottom: 5px;
+    .group{
+      margin-bottom: 15px;
+      .group__name{
+        color: white;
+        text-decoration: none;
+      }
+    }
   }
   .bar-message{
     font-size: 11px;
