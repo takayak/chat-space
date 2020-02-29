@@ -19,7 +19,7 @@
         .type-message
           = f.text_field :content, class: 'word' , placeholder: 'type a message'
           = f.label :image, class: 'word-right' do
-            = icon('fas', 'image', class: '')
+            = icon('fas', 'image', class: 'fa-2x')
             = f.file_field :image, class: 'display-none'
         .word-right
         = f.submit 'Send', class: 'send-button'
