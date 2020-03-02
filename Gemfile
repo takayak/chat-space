@@ -72,3 +72,7 @@ gem 'mini_magick'
 
 #railsでjQueryを使えるようにする方法
 gem 'jquery-rails'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
