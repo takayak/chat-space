@@ -45,6 +45,7 @@
   background-color: #fafafa;
   width: calc(100vw - 300px);
   height: calc(100vh - 190px);
+  overflow: scroll;
   
   .Message{
     margin-left: 40px;
