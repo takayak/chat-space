@@ -75,6 +75,7 @@ gem 'haml-rails'
 # Image Uploader
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-aws'
 
 
 #railsでjQueryを使えるようにする方法
