@@ -8,5 +8,5 @@
     - if message.content.present?     
       .message-content
         = message.content
-    = image_tag message.image.url, class: '' if message.image.present?
+    = image_tag message.image.url, class: 'chat-image' if message.image.present?
     
