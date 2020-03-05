@@ -15,15 +15,15 @@ $(function(){
     })
     .done(function(messages) {
       if (messages.length !== 0) {
-      //追加するHTMLの入れ物を作る
-      var insertHTML = '';
-      //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
-      $.each(messages, function(i, message) {
-        insertHTML += buildHTML(message)
-      });
-      //メッセージが入ったHTMLに、入れ物ごと追加
-      $('.main_chat-middle').append(insertHTML);
-      $('.main_chat-middle').animate({ scrollTop: $('.main_chat-middle')[0].scrollHeight});
+        //追加するHTMLの入れ物を作る
+        var insertHTML = '';
+        //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+        });
+        //メッセージが入ったHTMLに、入れ物ごと追加
+        $('.main_chat-middle').append(insertHTML);
+        $('.main_chat-middle').animate({ scrollTop: $('.main_chat-middle')[0].scrollHeight});
     }
     })
     .fail(function() {
@@ -91,17 +91,17 @@ $(function(){
       return html;
    };
 $('#new_message').on('submit', function(e){
- e.preventDefault();
- var formData = new FormData(this);
- var url = $(this).attr('action')
+  e.preventDefault();
+  var formData = new FormData(this);
+  var url = $(this).attr('action')
  $.ajax({
-   url: url,
-   type: "POST",
-   data: formData,
-   dataType: 'json',
-   processData: false,
-   contentType: false
- })
+    url: url,
+    type: "POST",
+    data: formData,
+    dataType: 'json',
+    processData: false,
+    contentType: false
+  })
   .done(function(data){
     var html = buildHTML(data);
     $('.main_chat-middle').append(html);  
