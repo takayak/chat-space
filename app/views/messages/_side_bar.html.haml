@@ -13,7 +13,7 @@
       .bar_logo.samevalue
         - current_user.groups.each do |group|
           .group
-            = link_to group_messages_path(group) do
+            = link_to group_messages_path(group) ,class:'link'do
               .group__name
                 = group.name
             .bar-message.samevalue

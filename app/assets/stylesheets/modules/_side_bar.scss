@@ -37,10 +37,16 @@
   .bar_logo{
     font-size: 15px;
     .group{
+      .link{
+        text-decoration: none;
+      }
+      .link:hover{
+        font-size: larger;
+        transition-duration: 0.3s;
+      }
       margin-bottom: 15px;
       .group__name{
         color: white;
-        text-decoration: none;
       }
     }
   }
