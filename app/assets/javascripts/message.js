@@ -49,7 +49,7 @@ $(function(){
            </p>
          </div>
          <div class="chat-image">
-         <img src=${message.image} class="chat-image">
+          <img src=${message.image} class="chat-image">
          </div>
        </div>`
    } else if(message.content) {
