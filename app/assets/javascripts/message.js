@@ -24,7 +24,7 @@ $(function(){
         //メッセージが入ったHTMLに、入れ物ごと追加
         $('.main_chat-middle').append(insertHTML);
         $('.main_chat-middle').animate({ scrollTop: $('.main_chat-middle')[0].scrollHeight});
-    }
+      }
     })
     .fail(function() {
       alert('error');
