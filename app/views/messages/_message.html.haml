@@ -1,12 +1,12 @@
-.Message
+.Message{data: {message: {id: message.id}}}
   .message-name
     .left
       = message.user.name
     .right
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .message-content
-    - if message.content.present?     
-      .message-content
+    - if message.content.present?
+      .message
         = message.content
     = image_tag message.image.url, class: 'chat-image' if message.image.present?
     
